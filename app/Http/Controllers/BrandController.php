@@ -18,7 +18,17 @@ class BrandController extends Controller
     //create()	Hiển thị form để tạo một tài nguyên mới.
     public function create()
     {
+        return view('brands.create');
+    }
 
+    //store(Request $request)	Xử lý lưu một tài nguyên mới vào cơ sở dữ liệu.
+    public function store(Request $request)
+    {
+
+
+        return response()->json([
+           'message' => 'ahihi'
+        ]);
     }
 
     //edit($id)	Hiển thị form để chỉnh sửa tài nguyên cụ thể.
@@ -48,11 +58,7 @@ class BrandController extends Controller
 
     }
 
-    //store(Request $request)	Xử lý lưu một tài nguyên mới vào cơ sở dữ liệu.
-    public function store()
-    {
 
-    }
 
     //destroy($id)	Xóa một tài nguyên cụ thể khỏi cơ sở dữ liệu.
 

@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <h1>Danh sách brand</h1>
-    <h2>thêm</h2>
+    <h2><a href="{{route('brands.create')}}">thêm</a></h2>
 
     <table>
         <tr>
